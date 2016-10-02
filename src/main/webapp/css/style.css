@@ -1,0 +1,280 @@
+body, html { margin: 0; padding: 0;}
+
+body, html {
+    font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    color: #343434;
+    background: #f7f7f7;
+}
+
+body {
+    margin: 20px;
+}
+
+iframe {
+    display:block;
+    border:0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+button {
+    background: #e9e9e9;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 2px 13px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 0;
+    cursor: pointer;
+}
+
+button input {
+    border: 1px solid #ddd;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 0 -11px 0 5px;
+    padding: 2px;
+}
+
+.widgetOptions label {
+    cursor: pointer;
+}
+.widgetOptions input[type=text] {
+    width: 25px;
+}
+.widgetOptions input {
+    margin: 0 5px 3px 0;
+    display: inline-block;
+}
+
+.widgetOptions li {
+    float: left;
+    margin: 0 10px 5px 0;
+}
+.widgetLinks li {
+    display: block;
+    float: none;
+    margin: 0 0 10px 0;
+}
+.widgetLinks a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+div.Tokenize ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.Tokenize ul li {
+    white-space: nowrap;
+}
+
+div.Tokenize ul.TokensContainer {
+    cursor: text;
+    padding: 0 5px 5px 0;
+    height: 100px;
+    overflow-y: auto;
+    background-color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.Tokenize ul.TokensContainer.Autosize {
+    height: auto;
+}
+
+div.Tokenize.Disabled ul.TokensContainer,
+div.Tokenize.Disabled ul.TokensContainer input {
+    cursor: not-allowed;
+}
+
+div.Tokenize ul.TokensContainer li.Token {
+    border: 1px solid #ccd5e3;
+    background-color: #eff2f7;
+    padding: 0 5px;
+    line-height: 18px;
+}
+
+div.Tokenize ul.TokensContainer.ui-sortable:not(.ui-sortable-disabled) li.Token {
+    cursor: move;
+}
+
+div.Tokenize ul.TokensContainer li.Token.MovingShadow  {
+    border: 1px solid #fcefa1;
+    background-color: #fbf9ee;
+}
+
+div.Tokenize ul.TokensContainer li.Token.PendingDelete {
+    opacity : 0.5;
+    -moz-opacity : 0.5;
+    -ms-filter: "alpha(opacity=50)";
+    filter : alpha(opacity=50);
+}
+
+div.Tokenize ul.TokensContainer li.Token,
+div.Tokenize ul.TokensContainer li.TokenSearch {
+    margin: 5px 0 0 5px;
+    height: 18px;
+    float: left;
+}
+
+div.Tokenize ul.TokensContainer li.TokenSearch input {
+    margin: 0;
+    padding: 1px 0;
+    background-color: transparent;
+    line-height: 18px;
+    border: none;
+    outline: none;
+}
+
+div.Tokenize ul.TokensContainer li.Placeholder {
+    color: #ddd;
+    position: absolute;
+    line-height: 20px;
+    padding: 5px 0 0 5px;
+    display: none;
+}
+
+div.Tokenize ul.TokensContainer,
+div.Tokenize ul.Dropdown {
+    border: 1px solid #ccc;
+}
+
+div.Tokenize ul.TokensContainer li.Token a.Close {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 18px;
+    float: right;
+    margin: 1px 0 0 5px;
+    padding: 0;
+    cursor: pointer;
+    color: #a6b4ce;
+}
+
+div.Tokenize.Disabled ul.TokensContainer li.Token a.Close {
+    display: none;
+}
+
+div.Tokenize ul.TokensContainer li.Token a.Close:hover {
+    background: transparent;
+    text-decoration: none;
+}
+
+div.Tokenize ul.Dropdown {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: none;
+    width: 100%;
+    padding: 5px 0;
+    margin: -1px 0 0 0;
+    position: absolute;
+    background-color: white;
+    overflow-y: auto;
+
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+
+    z-index: 20;
+}
+
+div.Tokenize ul.Dropdown li {
+    padding: 5px 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.Tokenize ul.Dropdown li.Hover {
+    color: white;
+    text-decoration: none;
+    background-color: #FF4000;
+    background-image: -moz-linear-gradient(top, #FF5100, #FF2800);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF5100), to(#FF2800));
+    background-image: -webkit-linear-gradient(top, #FF5100, #FF2800);
+    background-image: -o-linear-gradient(top, #FF5100, #FF2800);
+    background-image: linear-gradient(to bottom, #FF5100, #FF2800);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5100', endColorstr='#FF2800', GradientType=0);
+}
+
+.tokenize-sample {
+    width: 85%;
+    display: inline-block;
+}
+.tokenize-sample .TokensContainer {
+    height: 55px !important
+}
+.tokenize-sample * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+.tokenize-sample ul.TokensContainer, .tokenize-sample ul.Dropdown {
+    border: 1px solid #D2D7D9 !important;
+}
+.button-search {
+    width: 14%;
+    height: 62px;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    color: #FFFFFF;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF5100), to(#FF2800));
+
+}
+.button-orange {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF5100), to(#FF2800));
+    color: #FFFFFF;
+}
+.parent-btn {
+    width: 100%;
+    height: 10%;
+    /*position: absolute;*/
+    display: none;
+
+    top: 0;
+    left: 0;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0;
+    vertical-align: bottom;
+
+    /*
+    &:before {
+         height: 100%;
+         display: inline-block;
+         vertical-align: middle;
+         content: '';
+     }
+     */
+}
+.nav-button {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+    text-align: left;
+}
